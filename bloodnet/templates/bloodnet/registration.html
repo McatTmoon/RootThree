@@ -1,0 +1,229 @@
+{% extends "bloodnet/base.html" %}
+{% load static %}
+{% block title %}ثبت‌نام اهدای خون{% endblock %}
+{% block page_id %}registration{% endblock %}
+{% block content %}
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-xl border-b border-primary/20 shadow-sm pt-safe">
+  <div class="max-w-7xl mx-auto h-16 px-4 sm:px-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <button type="button" id="drawer-open-btn" aria-label="باز کردن منو" class="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+      <a href="{% url 'bloodnet:home' %}" class="flex items-center gap-2.5 hover:opacity-90 transition-opacity">
+        <div class="w-9 h-9 rounded-lg bg-primary text-white flex items-center justify-center shadow-sm shrink-0">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 21.5c-3.5 0-6.5-3-6.5-6.5 0-3.3 5-10.2 6.5-12.2 1.5 2 6.5 8.9 6.5 12.2 0 3.5-3 6.5-6.5 6.5zm-1-8V11h2v2.5H15.5v2H13V18h-2v-2.5H8.5v-2H11z"></path>
+          </svg>
+        </div>
+        <div class="flex flex-col text-right">
+          <span class="font-headline-sm text-[16px] sm:text-[18px] text-primary font-bold leading-tight">اهدای خون دانشجویی دانشگاه لرستان</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-medium opacity-80">BloodNet LU · ثبت‌نام اهدا</span>
+        </div>
+      </a>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="{% url 'bloodnet:tracking' %}" title="پیگیری نوبت من" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-primary bg-primary/10 hover:bg-primary/20 transition-colors text-label-md font-medium">
+        <span class="material-symbols-outlined text-[20px]">account_circle</span>
+        <span class="hidden sm:inline">پیگیری نوبت من</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="min-h-screen pt-16 pb-24 lg:pb-12 bg-surface">
+  <div id="mobile-drawer" class="fixed inset-0 z-50 lg:hidden hidden" aria-modal="true" role="dialog">
+    <div id="drawer-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity"></div>
+    <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-surface-container-lowest shadow-2xl p-5 flex flex-col justify-between z-10">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+          <span class="font-headline-sm text-primary font-bold text-sm">سامانه BloodNet LU</span>
+          <button type="button" id="drawer-close-btn" aria-label="بستن منو" class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container">
+            <span class="material-symbols-outlined text-[22px]">close</span>
+          </button>
+        </div>
+        <nav class="mt-4 flex flex-col space-y-1.5">
+          <a href="{% url 'bloodnet:home' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">home</span><span>صفحه اصلی</span></a>
+          <a href="{% url 'bloodnet:registration' %}" aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-on-primary font-bold text-body-md"><span class="material-symbols-outlined text-[22px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a>
+          <a href="{% url 'bloodnet:invitation' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">group_add</span><span>دعوت‌نامه</span></a>
+          <a href="{% url 'bloodnet:tracking' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span>پیگیری نوبت</span></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <aside class="hidden lg:block lg:col-span-3 sticky top-20 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20">
+      <div class="pb-3 border-b border-outline-variant/20 mb-3">
+        <span class="font-headline-sm text-headline-sm text-primary font-bold block">منوی دسترسی سریع</span>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">سامانه داوطلبان اهدای خون</span>
+      </div>
+      <nav class="flex flex-col space-y-1.5">
+        <a href="{% url 'bloodnet:home' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">home</span><span>صفحه اصلی</span></a>
+        <a href="{% url 'bloodnet:registration' %}" aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-on-primary font-bold text-body-md shadow-sm"><span class="material-symbols-outlined text-[22px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a>
+        <a href="{% url 'bloodnet:invitation' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">group_add</span><span>دعوت‌نامه</span></a>
+        <a href="{% url 'bloodnet:tracking' %}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span>پیگیری نوبت</span></a>
+      </nav>
+    </aside>
+
+    <main class="w-full lg:col-span-9 flex flex-col space-y-space-md">
+      {% if saved_appointment %}
+      <div id="booking-success-card" class="bg-secondary-container/40 border border-secondary p-4 rounded-xl flex flex-col gap-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-secondary font-bold">
+            <span class="material-symbols-outlined">check_circle</span>
+            <span>نوبت شما با موفقیت در پایگاه داده ثبت شد!</span>
+          </div>
+          <span class="font-mono font-bold text-primary dir-ltr">{{ saved_appointment.tracking_code }}</span>
+        </div>
+        <p class="text-[14px] text-on-surface">
+          متقاضی: <strong>{{ saved_appointment.full_name }}</strong> ({{ saved_appointment.student_id }}) ·
+          بازه زمانی: <strong>{% if saved_appointment.slot %}{{ saved_appointment.slot.time_label }}{% else %}فهرست انتظار{% endif %}</strong> ·
+          وضعیت: <strong>{% if saved_appointment.status == 'waitlist' %}فهرست انتظار{% else %}نوبت رزرو شده (معتبر){% endif %}</strong>
+        </p>
+        <a href="{% url 'bloodnet:tracking' %}?code={{ saved_appointment.tracking_code }}" class="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-primary text-on-primary font-bold text-[14px] w-fit">
+          <span>مشاهده و پیگیری نوبت ({{ saved_appointment.tracking_code }})</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        </a>
+      </div>
+      {% endif %}
+
+      {% if form_errors %}
+      <div id="booking-error-banner" class="bg-error-container text-on-error-container p-4 rounded-xl border border-error/40" role="alert">
+        <div class="font-bold mb-1 flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px]">error</span>
+          <span>خطا در اعتبارسنجی اطلاعات ثبت‌نام:</span>
+        </div>
+        <ul class="list-disc pr-5 text-[13px] space-y-1">
+          {% for err in form_errors %}
+          <li>{{ err }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="flex items-center justify-between pt-1">
+        <div class="flex flex-col">
+          <h1 class="font-headline-md text-[24px] sm:text-[28px] lg:text-[32px] text-primary tracking-tight font-bold">ثبت‌نام اهدای خون دانشجویی</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ثبت نوبت داوطلبانه دانشگاه لرستان</p>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/20 flex flex-col space-y-space-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">اطلاعات هویتی دانشجو</h2>
+          </div>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">مرحله ۱ از ۲</span>
+        </div>
+        <form method="post" action="{% url 'bloodnet:registration' %}" class="space-y-space-md" id="donor-form" data-django-form="true">
+          {% csrf_token %}
+          <input type="hidden" name="slot" id="selected-slot-input" value="{{ selected_slot_label }}">
+          <input type="hidden" name="action" id="booking-action-input" value="book">
+          <input type="hidden" name="invited" value="{% if invited %}1{% else %}0{% endif %}">
+
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="full-name">نام و نام خانوادگی <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <input aria-describedby="name-helper" class="w-full bg-surface-container-low rounded-lg py-2.5 pr-10 pl-3 font-body-md text-body-md text-on-surface placeholder:text-outline outline-none border border-transparent focus:border-primary/30" id="full-name" name="fullName" value="{{ form.fullName.value|default:'' }}" placeholder="محمد ترکیان" type="text" required>
+              <span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">person</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="student-id">شماره دانشجویی (۹ رقم) <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <input class="w-full bg-surface-container-low rounded-lg py-2.5 pr-10 pl-3 font-body-md text-body-md text-on-surface placeholder:text-outline outline-none border border-transparent focus:border-primary/30" id="student-id" inputmode="numeric" maxlength="9" name="studentId" value="{{ form.studentId.value|default:'' }}" placeholder="مانند: ۴۰۱۲۳۴۵۶۷" type="text" required>
+              <span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">pin</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="faculty-select">دانشکده محل تحصیل <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <select class="w-full appearance-none bg-surface-container-low rounded-lg py-2.5 pr-10 pl-9 font-body-md text-body-md text-on-surface outline-none border border-transparent focus:border-primary/30" id="faculty-select" name="faculty">
+                <option value="دانشکده فنی و مهندسی" {% if form.faculty.value == 'دانشکده فنی و مهندسی' %}selected{% endif %}>دانشکده فنی و مهندسی</option>
+                <option value="دانشکده علوم پایه" {% if form.faculty.value == 'دانشکده علوم پایه' %}selected{% endif %}>دانشکده علوم پایه</option>
+                <option value="دانشکده ادبیات و علوم انسانی" {% if form.faculty.value == 'دانشکده ادبیات و علوم انسانی' %}selected{% endif %}>دانشکده ادبیات و علوم انسانی</option>
+                <option value="دانشکده کشاورزی و منابع طبیعی" {% if form.faculty.value == 'دانشکده کشاورزی و منابع طبیعی' %}selected{% endif %}>دانشکده کشاورزی و منابع طبیعی</option>
+                <option value="دانشکده دامپزشکی" {% if form.faculty.value == 'دانشکده دامپزشکی' %}selected{% endif %}>دانشکده دامپزشکی</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/20 flex flex-col space-y-space-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">انتخاب بازه زمانی اهدا</h2>
+          </div>
+          <span class="font-label-sm text-label-sm text-secondary font-medium" id="active-slot-label">انتخاب فعال: {{ selected_slot_label }}</span>
+        </div>
+        <div aria-label="بازه زمانی اهدا" class="flex flex-col space-y-space-xs" id="slots-group" role="radiogroup">
+          {% for slot in slots %}
+            {% if not slot.is_available %}
+            <button aria-disabled="true" class="w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container opacity-60 cursor-not-allowed text-right text-outline" disabled type="button" data-slot="{{ slot.time_label }}">
+              <div class="flex items-center gap-space-sm">
+                <span class="material-symbols-outlined text-[20px]">block</span>
+                <div class="flex flex-col">
+                  <span class="font-label-lg text-label-lg line-through">{{ slot.time_label }}</span>
+                  <span class="font-body-sm text-body-sm">{{ slot.subtitle }}</span>
+                </div>
+              </div>
+              <span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md">ظرفیت تکمیل</span>
+            </button>
+            {% else %}
+            <button aria-checked="{% if slot.time_label == selected_slot_label %}true{% else %}false{% endif %}" class="slot-btn {% if slot.time_label == selected_slot_label %}active-slot bg-primary-fixed/30 border border-primary/30{% else %}bg-surface-container-low{% endif %} w-full flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-all text-right shadow-sm focus:outline-none" data-slot="{{ slot.time_label }}" data-badge-original="{{ slot.remaining_capacity }} نوبت در دسترس" role="radio" type="button">
+              <div class="flex items-center gap-space-sm">
+                <span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+                <div class="flex flex-col">
+                  <span class="font-label-lg text-label-lg text-on-surface font-bold">{{ slot.time_label }}</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">{{ slot.subtitle }}</span>
+                </div>
+              </div>
+              <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-md font-medium">
+                {% if slot.time_label == selected_slot_label %}انتخاب شده ✓{% else %}{{ slot.remaining_capacity }} نوبت در دسترس{% endif %}
+              </span>
+            </button>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div aria-live="polite" class="bg-surface-container rounded-lg p-space-md shadow-sm border border-outline-variant/20 relative overflow-hidden" role="status">
+        <div class="grid grid-cols-1 gap-y-2">
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">نام متقاضی:</span>
+            <span class="font-label-md text-label-md text-on-surface font-semibold" id="summary-name">{{ form.fullName.value|default:'وارد نشده' }}</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">دانشکده:</span>
+            <span class="font-label-md text-label-md text-on-surface font-semibold" id="summary-faculty">{{ form.faculty.value|default:'دانشکده فنی و مهندسی' }}</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">بازه زمانی نوبت:</span>
+            <span class="font-label-md text-label-md text-primary font-extrabold" id="summary-slot">{{ selected_slot_label }}</span>
+          </div>
+        </div>
+      </div>
+
+      <p id="booking-feedback" role="status" {% if not saved_appointment and not form_errors %}hidden{% endif %}>
+        {% if saved_appointment %}
+          نوبت شما با کد پیگیری {{ saved_appointment.tracking_code }} برای بازه {% if saved_appointment.slot %}{{ saved_appointment.slot.time_label }}{% else %}فهرست انتظار{% endif %} ثبت شد.
+        {% elif form_errors %}
+          {{ form_errors.0 }}
+        {% endif %}
+      </p>
+
+      <div class="pt-space-xs">
+        <button class="w-full bg-primary text-on-primary py-3.5 px-space-md rounded-lg font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs shadow-md hover:bg-primary-container transition-all" id="submit-booking-btn" type="submit" form="donor-form">
+          <span class="material-symbols-outlined text-[22px]">how_to_reg</span>
+          <span>تأیید و ثبت نهایی نوبت اهدا</span>
+        </button>
+      </div>
+    </main>
+  </div>
+</div>
+{% endblock %}

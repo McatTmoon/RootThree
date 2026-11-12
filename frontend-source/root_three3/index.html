@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>اهدای خون در دانشگاه لرستان</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<noscript>برای نمایش صفحات BloodNet، جاوااسکریپت مرورگر را فعال کنید.</noscript>
+
+<template id="page-home">
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-xl shadow-sm pt-safe"><div class="h-16 px-4 md:px-8 max-w-7xl mx-auto flex items-center justify-between gap-2"><div class="flex items-center gap-2.5"><button id="mobileMenuBtn" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileDrawer" class="lg:hidden w-10 h-10 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors focus-visible:outline-2 focus-visible:outline-primary"><span class="material-symbols-outlined text-[24px]">menu</span></button><a href="index.html" class="flex items-center gap-2.5 text-right no-underline"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shrink-0 shadow-sm"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" fill="#ffffff"></path><path d="M12 11a2.5 2.5 0 0 0-2.5 2.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5A2.5 2.5 0 0 0 12 11z" fill="#8B1E2D"></path></svg></div><div class="flex flex-col min-w-0"><span class="font-bold text-[15px] sm:text-[17px] text-primary leading-snug tracking-tight truncate">اهدای خون دانشجویی دانشگاه لرستان</span><span class="font-label-sm text-[11px] text-on-surface-variant font-medium tracking-wider">BloodNet LU · دانشگاه لرستان</span></div></a></div><div class="flex items-center gap-2"><a href="index.html?page=tracking" aria-label="پیگیری نوبت من" title="پیگیری نوبت من" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-fixed/50 hover:bg-primary-fixed text-primary text-[13px] font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-primary"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="hidden sm:inline">پیگیری نوبت من</span></a></div></div><div class="h-[2px] w-full bg-primary-container opacity-40"></div></header><main class="relative w-full pt-16 pb-24 lg:pb-12 bg-surface min-h-screen"><div class="max-w-7xl mx-auto px-4 md:px-8 py-4 lg:py-6"><div class="flex flex-col lg:flex-row gap-6"><!-- Desktop Right-Hand Navigation Sidebar (RTL First) --><aside class="hidden lg:block w-64 shrink-0"><div class="sticky top-20 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30"><div class="flex items-center gap-2 pb-3 mb-3 border-b border-surface-container-high"><span class="material-symbols-outlined text-primary text-[22px]">dashboard</span><span class="font-headline-sm text-[16px] text-on-surface font-bold">ناوبری سامانه</span></div><nav class="flex flex-col gap-1.5"><a href="index.html" aria-current="page" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg bg-primary-container text-on-primary font-bold text-[14px] shadow-sm transition-colors"><span class="material-symbols-outlined text-[20px]">home</span><span>صفحه اصلی</span></a><a href="index.html?page=registration" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a><a href="index.html?page=invitation" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">group_add</span><span>دعوت‌نامه</span></a><a href="index.html?page=tracking" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>پیگیری نوبت</span></a></nav><div class="mt-6 p-3 rounded-lg bg-surface-container-low border border-surface-container-high"><div class="flex items-center gap-1.5 text-primary text-[12px] font-bold mb-1"><span class="material-symbols-outlined text-[16px]">support_agent</span><span>پشتیبانی دانشگاه</span></div><p class="text-[12px] text-on-surface-variant leading-relaxed">در صورت بروز مشکل در فرآیند نوبت‌دهی با مرکز بهداشت پردیس کمالوند تماس بگیرید.</p></div></div></aside><!-- Main Body Column --><div class="home-content flex-1 min-w-0 flex flex-col gap-6"><!-- Campus Header Intro --><section class="home-intro relative w-full pt-1 px-1"><div class="flex items-center justify-between gap-space-sm mb-3 opacity-60"><div class="h-[1px] flex-1 bg-gradient-to-l from-primary/30 to-transparent"></div><svg class="w-16 h-3 text-primary/40 shrink-0" fill="none" viewBox="0 0 72 12" xmlns="http://www.w3.org/2000/svg"><path d="M0 6C12 6 15 1 24 1C33 1 36 11 48 11C57 11 60 6 72 6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path><circle cx="36" cy="6" fill="currentColor" r="1.5"></circle></svg><div class="h-[1px] flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div></div><div class="flex flex-col text-right space-y-1.5"><div class="inline-flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[12px]"><span class="material-symbols-outlined text-[14px]">school</span><span>دانشگاه لرستان</span></div><h1 class="text-[24px] sm:text-[28px] lg:text-[32px] text-primary tracking-tight font-extrabold mt-1">یه قرار کوچک، برای ادامهٔ زندگی</h1><p class="text-[14px] sm:text-[15px] text-on-surface-variant leading-relaxed">این بار توی دانشگاه کنار هم خون اهدا می‌کنیم. اگر همراهی، یک زمان مناسب انتخاب کن.</p></div></section><!-- Main Active Campaign Card --><section class="home-campaign w-full"><div class="relative bg-surface-container-lowest rounded-xl p-4 sm:p-6 shadow-[0_8px_24px_-4px_rgba(24,28,31,0.06),0_2px_8px_rgba(107,1,25,0.03)] border border-outline-variant/30 overflow-hidden"><div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary via-primary-container to-primary"></div><div class="flex items-center justify-between gap-2 mb-3 pt-1"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>رویداد فعال • نوبت‌دهی باز</span></div><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm opacity-90"><span class="material-symbols-outlined text-[12px]">info</span>اطلاعات رسمی</span></div><div class="mb-4"><h2 class="text-[18px] sm:text-[22px] font-bold text-on-surface tracking-tight mb-1">پویش اهدای خون  دانشگاهیان لرستان</h2><p class="text-[13px] sm:text-[14px] text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">location_on</span><span>دانشگاه لرستان با همکاری سازمان انتقال خون استان لرستان</span></p></div><!-- Campus Event Image (16:9 Aspect Ratio, responsive & non-broken) --><div class="relative w-full aspect-[16/9] max-h-72 rounded-lg overflow-hidden mb-4 bg-surface-container"><img class="w-full h-full object-cover" alt="ایستگاه استقرار سیار انتقال خون در دانشگاه لرستان" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdM7wXW8hHoSFCRSnnnRvsY8lZZa0r_gJOaeJEm_CFXBRRb7veSp4wdVG6i_SnmnDH3XntXIOXyArqTMqGBwM8fxQCwX2yk68S5AE_VKtpQZ0QvCqN7LuS3jc3ES1T3HXfu2BipZdJEv19PIG-V6xx19vo5WSSLDJwQNplVkuxiRoWsnf9O8sj1bTkglfzFfuU2Oz6Pf5H7C3AUwFps5NG3JD93Eg-ySB0Q138pPL7"><div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-2.5"><span class="font-label-sm text-[12px] text-surface-container-lowest flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">photo_camer</span>ایستگاه استقرار سیار انتقال خون ·</span></div></div><!-- Bento Grid Details --><div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-5 text-[13px] sm:text-[14px]"><div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">event</span><span>تاریخ برگزاری رویداد</span></div><span class="font-bold text-on-surface">سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳</span></div><div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">schedule</span><span>ساعت فعالیت پایگاه</span></div><span class="font-bold text-on-surface">از ۰۸:۳۰ الی ۱۴:۰۰</span></div><div class="sm:col-span-2 flex items-start justify-between p-3 rounded-lg bg-surface-container-low"><div class="flex items-center gap-2 text-on-surface-variant shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary text-[18px]">apartment</span><span>مکان استقرار</span></div><span class="font-medium text-on-surface text-left mr-2">خرم‌آباد، پردیس کمالوند، لابی سالن ورزشی امام علی (ع)</span></div><div class="sm:col-span-2 flex items-center justify-between p-3 rounded-lg bg-primary-fixed/40"><div class="flex items-center gap-2 text-on-primary-fixed-variant"><span class="material-symbols-outlined text-primary text-[18px]">how_to_reg</span><span class="font-medium">ظرفیت کل باقی‌مانده</span></div><span class="inline-flex items-center gap-1 font-bold text-[15px] text-primary"><span>۴۲</span><span class="font-normal text-[12px]">نوبت آزاد</span></span></div></div><!-- Action Buttons linked directly --><div class="flex flex-col sm:flex-row gap-3 pt-1"><a class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-primary text-on-primary font-bold text-[15px] shadow-md hover:bg-primary-container transition-all active:scale-[0.99] text-center focus-visible:outline-2 focus-visible:outline-primary" href="index.html?page=registration"><span>انتخاب نوبت اهدا</span><span class="material-symbols-outlined text-[18px]">arrow_back</span></a><a class="flex-1 flex items-center justify-center gap-1.5 py-3 px-4 rounded-lg bg-surface-container text-on-surface font-semibold text-[14px] hover:bg-surface-container-high transition-colors text-center focus-visible:outline-2 focus-visible:outline-primary" href="index.html?page=tracking"><span class="material-symbols-outlined text-primary text-[18px]">search_check</span><span>قبلاً ثبت‌نام کرده‌ام</span></a></div></div></section><!-- 3-Step Process Module --><section class="home-steps w-full"><div class="flex items-center justify-between mb-3 px-1"><div class="flex items-center gap-2"><span class="w-1.5 h-4 bg-primary rounded-full"></span><h3 class="text-[18px] sm:text-[20px] text-on-surface font-bold">از همین‌جا شروع کن</h3></div><span class="text-[13px] text-on-surface-variant font-medium">سه قدم تا حضور در پایگاه</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-3"><div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/20 flex flex-col gap-2"><div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-display text-[16px] font-bold">۱</div><span class="font-bold text-[15px] text-on-surface">انتخاب زمان مناسب</span><p class="text-[13px] text-on-surface-variant leading-relaxed">انتخاب بازه زمانی دلخواه (۲۰ دقیقه‌ای) بدون تداخل با ساعات کلاسی و امتحانات.</p></div><div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/20 flex flex-col gap-2"><div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-display text-[16px] font-bold">۲</div><span class="font-bold text-[15px] text-on-surface">ثبت‌نام دانشجویی</span><p class="text-[13px] text-on-surface-variant leading-relaxed">ثبت شماره دانشجویی و کد ملی، دریافت پیامک کد پیگیری و کارت ورود اختصاصی.</p></div><div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/20 flex flex-col gap-2"><div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-display text-[16px] font-bold">۳</div><span class="font-bold text-[15px] text-on-surface">حضور در پایگاه</span><p class="text-[13px] text-on-surface-variant leading-relaxed">همراه داشتن کارت دانشجویی و کارت ملی و اهدای زندگی‌بخش در سالن امام علی (ع).</p></div></div></section><!-- Simulator / Notification Notice --><section class="home-notify w-full"><div class="flex items-center justify-between mb-2 px-1"><span class="text-[13px] text-on-surface-variant flex items-center gap-1.5 font-medium"><span class="material-symbols-outlined text-[16px]">notifications</span>اطلاع‌رسانی دوره‌های بعد</span></div><div class="bg-surface-container-low rounded-xl p-4 sm:p-5 shadow-sm border border-outline-variant/20"><div class="flex flex-col sm:flex-row items-center gap-4"><div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0"><span class="material-symbols-outlined text-[26px]">sms</span></div><div class="flex-1 text-center sm:text-right"><h4 class="font-bold text-[15px] text-on-surface mb-1">از پویش بعدی باخبر شو</h4><p class="text-[13px] text-on-surface-variant leading-relaxed">در صورت تمایل به دریافت پیامک فراخوان رویدادهای آینده، شماره تلفن همراه خود را ثبت نمایید.</p></div><div class="w-full sm:w-auto flex flex-col sm:flex-row gap-2 shrink-0"><input class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg px-3 py-2 text-[13px] text-on-surface placeholder:text-outline focus:outline-none focus:border-primary" dir="rtl" placeholder="شماره موبایل (۰۹۱۲۳۴۵۶۷۸۹)" type="tel"><button class="py-2 px-4 rounded-lg bg-primary text-on-primary font-bold text-[13px] hover:bg-primary-container transition-colors whitespace-nowrap" data-action="home-1" type="button">ثبت شماره</button></div></div></div></section><!-- Quick Eligibility Banner --><section class="home-eligibility w-full"><div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">medical_services</span></div><div class="flex flex-col flex-1 text-right"><span class="font-bold text-[14px] text-on-surface">شرایط عمومی اهدای خون</span><span class="text-[13px] text-on-surface-variant leading-tight mt-0.5">حداقل سن ۱۸ سال تمام، وزن بالای ۵۰ کیلوگرم و همراه داشتن اصل کارت ملی الزامی است.</span></div></div></section></div></div></div><!-- Mobile Slide-over Navigation Drawer --><div id="drawerBackdrop" class="fixed inset-0 bg-inverse-surface/50 z-50 transition-opacity duration-300 opacity-0 pointer-events-none lg:hidden" aria-hidden="true"></div><aside id="mobileDrawer" role="dialog" aria-modal="true" aria-label="منوی ناوبری" class="fixed top-0 bottom-0 right-0 w-72 max-w-[85vw] bg-surface-container-lowest z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col lg:hidden"><div class="h-16 px-4 flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">bloodtype</span></div><span class="font-bold text-[14px] text-primary">منوی BloodNet LU</span></div><button id="closeDrawerBtn" aria-label="بستن منو" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors focus-visible:outline-2 focus-visible:outline-primary"><span class="material-symbols-outlined text-[22px]">close</span></button></div><nav class="flex flex-col p-4 gap-1.5 flex-1 overflow-y-auto"><a href="index.html" aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary-container text-on-primary font-bold text-[14px]"><span class="material-symbols-outlined text-[20px]">home</span><span>صفحه اصلی</span></a><a href="index.html?page=registration" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a><a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">group_add</span><span>دعوت‌نامه</span></a><a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-[14px] font-medium"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>پیگیری نوبت</span></a></nav><div class="p-4 border-t border-surface-container-high bg-surface-container-low"><div class="flex items-center gap-2 text-primary font-bold text-[13px] mb-1"><span class="material-symbols-outlined text-[18px]">location_city</span><span>دانشگاه لرستان</span></div><p class="text-[11px] text-on-surface-variant">پردیس کمالوند، پایگاه سیار انتقال خون لرستان</p></div></aside></main><nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(24,28,31,0.05)] lg:hidden border-t border-outline-variant/30" data-active-classes="text-primary font-label-lg"><div class="flex items-center justify-around h-16 px-2 max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 transition-colors text-primary font-bold" href="index.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-[12px] mt-0.5">صفحه اصلی</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html?page=registration"><span class="material-symbols-outlined text-[24px]">volunteer_activism</span><span class="font-label-sm text-[12px] mt-0.5">ثبت‌نام اهدا</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html?page=tracking"><span class="material-symbols-outlined text-[24px]">calendar_month</span><span class="font-label-sm text-[12px] mt-0.5">پیگیری نوبت</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html?page=invitation"><span class="material-symbols-outlined text-[24px]">group_add</span><span class="font-label-sm text-[12px] mt-0.5">دعوت‌نامه</span></a></div></nav>
+</template>
+
+<template id="page-registration">
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-xl border-b border-primary/20 shadow-sm pt-safe">
+  <div class="max-w-7xl mx-auto h-16 px-4 sm:px-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <button type="button" id="drawer-open-btn" aria-label="باز کردن منو" class="lg:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+      <a href="index.html" class="flex items-center gap-2.5 hover:opacity-90 transition-opacity">
+        <div class="w-9 h-9 rounded-lg bg-primary text-white flex items-center justify-center shadow-sm shrink-0">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 21.5c-3.5 0-6.5-3-6.5-6.5 0-3.3 5-10.2 6.5-12.2 1.5 2 6.5 8.9 6.5 12.2 0 3.5-3 6.5-6.5 6.5zm-1-8V11h2v2.5H15.5v2H13V18h-2v-2.5H8.5v-2H11z"></path>
+          </svg>
+        </div>
+        <div class="flex flex-col text-right">
+          <span class="font-headline-sm text-[16px] sm:text-[18px] text-primary font-bold leading-tight">اهدای خون دانشجویی دانشگاه لرستان</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-medium opacity-80">BloodNet LU · ثبت‌نام اهدا</span>
+        </div>
+      </a>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="index.html?page=tracking" title="پیگیری نوبت من" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-primary bg-primary/10 hover:bg-primary/20 transition-colors text-label-md font-medium">
+        <span class="material-symbols-outlined text-[20px]">account_circle</span>
+        <span class="hidden sm:inline">پیگیری نوبت من</span>
+      </a>
+    </div>
+  </div>
+</header><div class="min-h-screen pt-16 pb-24 lg:pb-12 bg-surface">
+  <!-- Mobile Drawer Overlay & Slide-over Sidebar -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 lg:hidden hidden" aria-modal="true" role="dialog">
+    <div id="drawer-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity"></div>
+    <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-surface-container-lowest shadow-2xl p-5 flex flex-col justify-between z-10 transition-transform transform translate-x-0">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 21.5c-3.5 0-6.5-3-6.5-6.5 0-3.3 5-10.2 6.5-12.2 1.5 2 6.5 8.9 6.5 12.2 0 3.5-3 6.5-6.5 6.5zm-1-8V11h2v2.5H15.5v2H13V18h-2v-2.5H8.5v-2H11z"></path>
+              </svg>
+            </div>
+            <span class="font-headline-sm text-primary font-bold text-sm">سامانه BloodNet LU</span>
+          </div>
+          <button type="button" id="drawer-close-btn" aria-label="بستن منو" class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container transition-colors">
+            <span class="material-symbols-outlined text-[22px]">close</span>
+          </button>
+        </div>
+        <nav class="mt-4 flex flex-col space-y-1.5">
+          <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+            <span class="material-symbols-outlined text-[22px]">home</span>
+            <span>صفحه اصلی</span>
+          </a>
+          <a href="index.html?page=registration" aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-on-primary font-bold text-body-md transition-colors">
+            <span class="material-symbols-outlined text-[22px]">volunteer_activism</span>
+            <span>ثبت‌نام اهدا</span>
+          </a>
+          <a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+            <span class="material-symbols-outlined text-[22px]">group_add</span>
+            <span>دعوت‌نامه</span>
+          </a>
+          <a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+            <span class="material-symbols-outlined text-[22px]">calendar_month</span>
+            <span>پیگیری نوبت</span>
+          </a>
+        </nav>
+      </div>
+      <div class="pt-4 border-t border-outline-variant/30 text-center">
+        <p class="font-body-sm text-on-surface-variant text-[12px]">دانشگاه لرستان · پویش اهدای خون</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- Desktop Sidebar (Right-hand in RTL) -->
+    <aside class="hidden lg:block lg:col-span-3 sticky top-20 bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/20">
+      <div class="pb-3 border-b border-outline-variant/20 mb-3">
+        <span class="font-headline-sm text-headline-sm text-primary font-bold block">منوی دسترسی سریع</span>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">سامانه داوطلبان اهدای خون</span>
+      </div>
+      <nav class="flex flex-col space-y-1.5">
+        <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+          <span class="material-symbols-outlined text-[22px]">home</span>
+          <span>صفحه اصلی</span>
+        </a>
+        <a href="index.html?page=registration" aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-on-primary font-bold text-body-md shadow-sm transition-colors">
+          <span class="material-symbols-outlined text-[22px]">volunteer_activism</span>
+          <span>ثبت‌نام اهدا</span>
+        </a>
+        <a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+          <span class="material-symbols-outlined text-[22px]">group_add</span>
+          <span>دعوت‌نامه</span>
+        </a>
+        <a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface hover:bg-surface-container text-body-md transition-colors">
+          <span class="material-symbols-outlined text-[22px]">calendar_month</span>
+          <span>پیگیری نوبت</span>
+        </a>
+      </nav>
+      <div class="mt-6 p-3 bg-surface-container-low rounded-lg text-center border border-outline-variant/20">
+        <span class="font-label-sm text-primary font-bold block">دانشگاه لرستان</span>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">ساعت پذیرش: ۰۸:۳۰ الی ۱۴:۰۰</span>
+      </div>
+    </aside>
+
+    <!-- Main Registration Form Column -->
+    <main class="w-full lg:col-span-9 flex flex-col space-y-space-md">
+      <!-- Demonstration Mode Notice -->
+      <div class="bg-surface-container-high rounded-lg px-space-md py-space-xs flex items-center justify-between shadow-sm border border-outline-variant/20">
+        <div class="flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-primary text-[18px]">science</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">پیش‌نمایش تعاملی (حالت نمایشی) • اطلاعات وارد شده ذخیره نهایی نمی‌شوند</span>
+        </div>
+        <span class="bg-primary/10 text-primary font-label-sm text-[10px] px-2 py-0.5 rounded-md font-bold">اطلاعات نمونه</span>
+      </div>
+
+      <!-- Screen Identity Header -->
+      <div class="flex items-center justify-between pt-1">
+        <div class="flex flex-col">
+          <h1 class="font-headline-md text-[24px] sm:text-[28px] lg:text-[32px] text-primary tracking-tight font-bold">ثبت‌نام اهدای خون دانشجویی</h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ثبت نوبت داوطلبانه دانشگاه لرستان</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-sm">
+          <span class="material-symbols-outlined text-[22px]">medical_services</span>
+        </div>
+      </div>
+
+      <!-- Event Context Capsule -->
+      <div class="relative overflow-hidden rounded-lg bg-gradient-to-l from-primary/10 via-surface-container to-surface-container-low p-space-md shadow-sm border border-outline-variant/20">
+        <div class="flex items-start gap-space-sm">
+          <div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+            <span class="material-symbols-outlined text-[20px]">campaign</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-space-xs">
+              <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">پایگاه فعال</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">پویش استانی دانشگاهیان</span>
+            </div>
+            <span class="font-label-lg text-label-lg text-on-surface font-bold mt-1">پویش اهدای خون دانشگاه لرستان (اطلاعات نمونه)</span>
+            <div class="flex items-center gap-space-xs mt-1 text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              <span class="font-body-sm text-body-sm">سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳ • ساعت ۰۸:۳۰ الی ۱۴:۰۰</span>
+            </div>
+            <div class="flex items-center gap-space-xs text-on-surface-variant mt-0.5">
+              <span class="material-symbols-outlined text-[16px]">location_on</span>
+              <span class="font-body-sm text-body-sm">دانشگاه لرستان</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Registration Form Card -->
+      <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/20 flex flex-col space-y-space-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">اطلاعات هویتی دانشجو</h2>
+          </div>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">مرحله ۱ از ۲</span>
+        </div>
+        <form class="space-y-space-md" id="donor-form" data-action="registration-1">
+          <!-- Field 1: Full Name -->
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="full-name">نام و نام خانوادگی <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <input aria-describedby="name-helper" class="w-full bg-surface-container-low rounded-lg py-2.5 pr-10 pl-3 font-body-md text-body-md text-on-surface placeholder:text-outline outline-none transition-all focus:bg-surface-container-lowest focus:shadow-md border border-transparent focus:border-primary/30" id="full-name" name="fullName" placeholder="محمد ترکیان" type="text">
+              <span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">person</span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant" id="name-helper">نام منطبق با کارت دانشجویی یا کارت ملی</span>
+          </div>
+          <!-- Field 2: Student ID -->
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="student-id">شماره دانشجویی (۹ رقم) <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <input class="w-full bg-surface-container-low rounded-lg py-2.5 pr-10 pl-3 font-body-md text-body-md text-on-surface placeholder:text-outline outline-none transition-all focus:bg-surface-container-lowest focus:shadow-md border border-transparent focus:border-primary/30" id="student-id" inputmode="numeric" maxlength="9" name="studentId" placeholder="مانند: ۴۰۱۲۳۴۵۶۷" type="text">
+              <span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">pin</span>
+            </div>
+            <!-- Inline Field Error Example -->
+            <div class="flex items-center gap-space-xs text-error mt-0.5" id="student-id-error" hidden>
+              <span class="material-symbols-outlined text-[16px]">info</span>
+              <span class="font-label-sm text-label-sm">لطفاً شماره دانشجویی معتبر ۹ رقمی وارد کنید (کمبود ۱ رقم).</span>
+            </div>
+          </div>
+          <!-- Field 3: Faculty Dropdown -->
+          <div class="flex flex-col space-y-1">
+            <label class="font-label-md text-label-md text-on-surface-variant font-medium" for="faculty-select">دانشکده محل تحصیل <span class="text-error">*</span></label>
+            <div class="relative flex items-center">
+              <select class="w-full appearance-none bg-surface-container-low rounded-lg py-2.5 pr-10 pl-9 font-body-md text-body-md text-on-surface outline-none transition-all focus:bg-surface-container-lowest focus:shadow-md border border-transparent focus:border-primary/30" id="faculty-select" name="faculty">
+                <option selected="" value="دانشکده فنی و مهندسی">دانشکده فنی و مهندسی</option>
+                <option value="دانشکده علوم پایه">دانشکده علوم پایه</option>
+                <option value="دانشکده ادبیات و علوم انسانی">دانشکده ادبیات و علوم انسانی</option>
+                <option value="دانشکده کشاورزی و منابع طبیعی">دانشکده کشاورزی و منابع طبیعی</option>
+                <option value="دانشکده دامپزشکی">دانشکده دامپزشکی</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">school</span>
+              <span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">expand_more</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Time Slot Selection Module -->
+      <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/20 flex flex-col space-y-space-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+            <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">انتخاب بازه زمانی اهدا</h2>
+          </div>
+          <span class="font-label-sm text-label-sm text-secondary font-medium" id="active-slot-label">انتخاب فعال: نوبت صبح</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">جهت تسهیل در خون‌گیری و جلوگیری از ازدحام، لطفاً بازه زمانی مناسب را برگزینید:</p>
+        <!-- Slot Matrix -->
+        <div aria-label="بازه زمانی اهدا" class="flex flex-col space-y-space-xs" id="slots-group" role="radiogroup">
+          <!-- Slot 1: Full / Disabled -->
+          <button aria-disabled="true" class="w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container opacity-60 cursor-not-allowed text-right text-outline" disabled="" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-[20px]">block</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg line-through">۰۸:۳۰ - ۰۹:۱۵</span>
+                <span class="font-body-sm text-body-sm">پذیرش افتتاحیه پایگاه</span>
+              </div>
+            </div>
+            <span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md">ظرفیت تکمیل</span>
+          </button>
+          <!-- Slot 2: Limited / Amber -->
+          <button aria-checked="false" class="slot-btn w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all text-right shadow-sm focus:outline-none" data-slot="۰۹:۱۵ - ۱۰:۰۰" data-status="محدود" role="radio" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-tertiary-container text-[20px]">pending</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg text-on-surface font-bold">۰۹:۱۵ - ۱۰:۰۰</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">نوبت شیفت اول صبح</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md font-medium">۳ نوبت باقی‌مانده</span>
+            </div>
+          </button>
+          <!-- Slot 3: Selected by Default / Active State -->
+          <button aria-checked="true" class="slot-btn active-slot w-full flex items-center justify-between p-space-sm rounded-lg bg-primary-fixed/30 border border-primary/30 shadow-sm text-right focus:outline-none" data-slot="۱۰:۰۰ - ۱۰:۴۵" data-status="انتخاب شده" role="radio" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg text-primary font-extrabold">۱۰:۰۰ - ۱۰:۴۵</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">اوج پذیرش سالن اصلی</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-md font-bold">انتخاب شده ✓</span>
+            </div>
+          </button>
+          <!-- Slot 4: Full / Disabled -->
+          <button aria-disabled="true" class="w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container opacity-60 cursor-not-allowed text-right text-outline" disabled="" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-[20px]">block</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg line-through">۱۰:۴۵ - ۱۱:۳۰</span>
+                <span class="font-body-sm text-body-sm">رزرو گروهی انجمن علمی</span>
+              </div>
+            </div>
+            <span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md">ظرفیت تکمیل</span>
+          </button>
+          <!-- Slot 5: Available / Green -->
+          <button aria-checked="false" class="slot-btn w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all text-right shadow-sm focus:outline-none" data-slot="۱۱:۳۰ - ۱۲:۱۵" data-status="در دسترس" role="radio" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg text-on-surface font-bold">۱۱:۳۰ - ۱۲:۱۵</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">نوبت پیش از ظهر</span>
+              </div>
+            </div>
+            <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-md font-medium">۸ نوبت در دسترس</span>
+          </button>
+          <!-- Slot 6: Available / Green -->
+          <button aria-checked="false" class="slot-btn w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all text-right shadow-sm focus:outline-none" data-slot="۱۲:۱۵ - ۱۳:۰۰" data-status="در دسترس" role="radio" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg text-on-surface font-bold">۱۲:۱۵ - ۱۳:۰۰</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">نوبت ظهرگاهی</span>
+              </div>
+            </div>
+            <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-md font-medium">۵ نوبت در دسترس</span>
+          </button>
+          <!-- Slot 7: Full / Disabled -->
+          <button aria-disabled="true" class="w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container opacity-60 cursor-not-allowed text-right text-outline" disabled="" type="button">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-[20px]">block</span>
+              <div class="flex flex-col">
+                <span class="font-label-lg text-label-lg line-through">۱۳:۰۰ - ۱۳:۴۵</span>
+                <span class="font-body-sm text-body-sm">پایان شیفت خون‌گیری</span>
+              </div>
+            </div>
+            <span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded-md">ظرفیت تکمیل</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Live Summary Card -->
+      <div aria-live="polite" class="bg-surface-container rounded-lg p-space-md shadow-sm border border-outline-variant/20 relative overflow-hidden" role="status">
+        <div class="absolute top-0 right-0 left-0 h-1 bg-primary"></div>
+        <div class="flex items-center justify-between pb-space-xs">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">خلاصه مشخصات نوبت انتخابی</h3>
+          </div>
+          <span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold">پیش‌ثبت‌نام</span>
+        </div>
+        <div class="grid grid-cols-1 gap-y-2 mt-2">
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg border border-outline-variant/10">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">نام متقاضی:</span>
+            <span class="font-label-md text-label-md text-on-surface font-semibold" id="summary-name">محمد ترکیان</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg border border-outline-variant/10">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">دانشکده:</span>
+            <span class="font-label-md text-label-md text-on-surface font-semibold" id="summary-faculty">دانشکده فنی و مهندسی</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg border border-outline-variant/10">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">تاریخ اهدا:</span>
+            <span class="font-label-md text-label-md text-primary font-bold">سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg border border-outline-variant/10">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">بازه زمانی نوبت:</span>
+            <span class="font-label-md text-label-md text-primary font-extrabold" id="summary-slot">۱۰:۰۰ - ۱۰:۴۵</span>
+          </div>
+          <div class="flex items-center justify-between py-1.5 bg-surface-container-lowest/80 px-space-sm rounded-lg border border-outline-variant/10">
+            <span class="font-body-sm text-body-sm text-on-surface-variant">محل استقرار تیم سیار:</span>
+            <span class="font-body-sm text-body-sm text-on-surface">پردیس کمالوند، لابی سالن امام علی</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulated Educational System Alert Notice -->
+      <div hidden class="rounded-lg bg-error-container/40 p-space-md flex items-start gap-space-sm shadow-sm border border-error/20" role="alert">
+        <span class="material-symbols-outlined text-error text-[22px] shrink-0 mt-0.5">cloud_sync</span>
+        <div class="flex flex-col">
+          <span class="font-label-lg text-label-lg text-on-error-container font-bold">خطا در برقراری ارتباط با سامانه آموزش دانشگاه</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            همگام‌سازی برخط کارنامه دانشجویی با وقفه مواجه شد. مقادیر ورودی شما به صورت خودکار حفظ شده است و بررسی صلاحیت اهدای خون در محل پایگاه توسط پزشک معتمد انجام خواهد پذیرفت.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reserve List / Sold Out Fallback Alert Notice -->
+      <div class="rounded-lg bg-surface-container-high p-space-md flex flex-col space-y-space-xs shadow-sm border border-outline-variant/20">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-tertiary-container text-[20px]">notifications_active</span>
+            <span class="font-label-lg text-label-lg text-on-surface font-bold">وضعیت اتمام ظرفیت سایر بازه‌ها؟</span>
+          </div>
+          <span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 rounded-md font-medium">فهرست ذخیره</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          چنانچه ساعت مدنظر شما تکمیل شده، می‌توانید در لیست انتظار رزرو ثبت‌نام کنید تا در صورت انصراف سایر داوطلبان به شما پیامک ارسال شود.
+        </p>
+        <div class="pt-1">
+          <button class="w-full py-2 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md shadow-sm border border-primary/20 active:scale-[0.99] transition-all" type="submit" form="donor-form" value="waitlist">
+            درخواست ورود به لیست انتظار رزرو
+          </button>
+        </div>
+      </div>
+
+      <p id="booking-feedback" role="status" hidden></p>
+      <!-- Final Confirmation CTA Button -->
+      <div class="pt-space-xs">
+        <button class="w-full bg-primary text-on-primary py-3.5 px-space-md rounded-lg font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="submit-booking-btn" type="submit" form="donor-form">
+          <span class="material-symbols-outlined text-[22px]">how_to_reg</span>
+          <span>تأیید و ثبت نهایی نوبت اهدا</span>
+        </button>
+        <p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-2">
+          همراه داشتن کارت ملی یا کارت دانشجویی در زمان مراجعه الزامی است.
+        </p>
+      </div>
+    </main>
+  </div>
+</div><nav class="lg:hidden fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(24,28,31,0.05)] border-t border-outline-variant/30">
+  <div class="flex items-center justify-around h-16 px-space-xs max-w-lg mx-auto">
+    <a href="index.html" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-[24px]">home</span>
+      <span class="font-label-sm text-label-sm mt-0.5">صفحه اصلی</span>
+    </a>
+    <a href="index.html?page=registration" aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 transition-colors text-primary font-bold font-label-lg">
+      <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+      <span class="font-label-sm text-label-sm mt-0.5">ثبت‌نام اهدا</span>
+    </a>
+    <a href="index.html?page=invitation" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-[24px]">group_add</span>
+      <span class="font-label-sm text-label-sm mt-0.5">دعوت‌نامه</span>
+    </a>
+    <a href="index.html?page=tracking" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-[24px]">calendar_month</span>
+      <span class="font-label-sm text-label-sm mt-0.5">پیگیری نوبت</span>
+    </a>
+  </div>
+</nav>
+</template>
+
+<template id="page-tracking">
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(107,1,25,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between max-w-7xl mx-auto w-full"><div class="flex items-center gap-space-sm"><button id="drawer-open-btn" aria-label="باز کردن منو" class="md:hidden w-10 h-10 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container active:bg-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary transition-colors" data-action="tracking-1" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><a href="index.html" class="flex items-center gap-space-sm focus:outline-none focus:ring-2 focus:ring-primary rounded-lg p-1"><img alt="نشان سامانه اهدای خون دانشگاه لرستان" class="h-9 w-auto object-contain" src="images/logo.png"><div class="flex flex-col text-right"><span class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">اهدای خون دانشجویی دانشگاه لرستان</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase opacity-80">BloodNet LU · ثبت‌نام اهدا</span></div></a></div><div class="flex items-center gap-2"><a href="index.html?page=tracking" aria-label="پیگیری نوبت من" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-on-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary text-label-sm font-semibold"><span class="material-symbols-outlined text-[18px]">account_circle</span><span class="hidden sm:inline">پیگیری نوبت من</span></a></div></div><div class="h-[1.5px] w-full bg-gradient-to-l from-transparent via-primary/30 to-transparent"></div></header><div id="drawer-backdrop" class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden transition-opacity opacity-0" data-action="tracking-2" aria-hidden="true"></div><aside id="mobile-drawer" class="fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-4 md:hidden" aria-label="منوی ناوبری موبایل"><div class="flex items-center justify-between pb-4 border-b border-surface-container"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[24px]">bloodtype</span><span class="font-headline-sm text-headline-sm text-primary font-bold">سامانه اهدای خون</span></div><button id="drawer-close-btn" aria-label="بستن منو" class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container focus:outline-none focus:ring-2 focus:ring-primary" data-action="tracking-3" type="button"><span class="material-symbols-outlined text-[22px]">close</span></button></div><nav class="flex flex-col gap-1.5 mt-4 flex-1"><a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">home</span><span>صفحه اصلی</span></a><a href="index.html?page=registration" class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a><a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-md bg-primary text-on-primary font-bold shadow-sm"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>پیگیری نوبت</span><span class="mr-auto text-[10px] bg-on-primary/20 px-1.5 py-0.5 rounded-full">فعال</span></a><a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">group_add</span><span>دعوت‌نامه</span></a></nav><div class="pt-4 border-t border-surface-container text-right"><span class="font-label-sm text-label-sm text-outline">پایگاه سیار دانشگاه لرستان</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">پردیس کمالوند، سالن ورزشی امام علی (ع)</p></div></aside><main class="flex flex-col md:flex-row relative w-full pt-20 pb-24 bg-surface min-h-screen px-margin max-w-7xl mx-auto gap-6"><aside class="hidden md:flex flex-col w-64 shrink-0 bg-surface-container-lowest rounded-xl p-space-md shadow-sm h-fit sticky top-24" aria-label="ناوبری اصلی"><div class="flex items-center gap-2 pb-3 mb-3 border-b border-surface-container"><span class="material-symbols-outlined text-primary text-[22px]">local_hospital</span><span class="font-headline-sm text-headline-sm text-primary font-bold">منوی سامانه</span></div><nav class="flex flex-col gap-1.5"><a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">home</span><span>صفحه اصلی</span></a><a href="index.html?page=registration" class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">volunteer_activism</span><span>ثبت‌نام اهدا</span></a><a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-label-md bg-primary text-on-primary font-bold shadow-sm"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>پیگیری نوبت</span></a><a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">group_add</span><span>دعوت‌نامه</span></a></nav><div class="mt-6 pt-4 border-t border-surface-container text-right"><span class="font-label-sm text-label-sm text-primary font-semibold block">راه ارتباطی پایگاه</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">پردیس کمالوند، سالن امام علی (ع)<br>داخلی ۲۳۴۰ مرکز بهداشت</p></div></aside><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- نوار کنترل وضعیت نمایشی (Demo Simulation Bar) -->
+<section class="w-full bg-surface-container-high text-on-surface rounded-xl p-space-sm shadow-sm">
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="font-label-sm text-label-sm font-semibold">حالت نمایشی • اطلاعات نمونه</span>
+</div>
+<span class="bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm">نسخه تست UI</span>
+</div>
+<!-- انتخاب سریع سناریوها با طراحی متناسب موبایل -->
+<div class="grid grid-cols-3 gap-1.5" id="simulation-controls">
+<button class="state-btn active py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-primary text-on-primary shadow-sm" data-state="confirmed" data-action="tracking-4" type="button">
+        تأیید شد
+      </button>
+<button class="state-btn py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm" data-state="checked_in" data-action="tracking-5" type="button">
+        مراجعه شد
+      </button>
+<button class="state-btn py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm" data-state="completed" data-action="tracking-6" type="button">
+        اهدا شد
+      </button>
+<button class="state-btn py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm" data-state="cancelled" data-action="tracking-7" type="button">
+        لغو شده
+      </button>
+<button class="state-btn py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm" data-state="not_found" data-action="tracking-8" type="button">
+        یافت نشد
+      </button>
+<button class="state-btn py-1.5 px-1 rounded-lg text-center font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm" data-state="error" data-action="tracking-9" type="button">
+        خطای اتصال
+      </button>
+</div>
+</section>
+<!-- فرم استعلام سریع نوبت -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-sm mb-3">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">search</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">استعلام و پیگیری وضعیت نوبت</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">شماره دانشجویی یا کد پیگیری دریافتی در پیامک را وارد کنید</p>
+</div>
+</div>
+<form class="space-y-space-sm" data-action="tracking-10">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute right-3 text-outline text-[20px] pointer-events-none">tag</span>
+<input class="w-full h-12 pr-10 pl-10 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg tracking-wider text-left placeholder:text-right placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-lowest shadow-inner" dir="ltr" id="tracking-input" placeholder="BLD-1403-8721 یا ۹۹۱۲۳۴۵۶" type="text" value="BLD-1403-8721">
+<button class="absolute left-3 text-outline hover:text-on-surface flex items-center justify-center" data-action="tracking-11" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<button class="w-full h-11 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-md active:opacity-90 transition-opacity" type="submit">
+<span class="material-symbols-outlined text-[19px]">manage_search</span>
+<span>بررسی وضعیت نوبت</span>
+</button>
+</form>
+</section>
+<!-- سناریوهای ۱ و ۲ و ۳: کارت نوبت فعال با استپر سه مرحله‌ای -->
+<div class="flex flex-col w-full space-y-4" id="view-active-appointment">
+<!-- کارت جزئیات نوبت و رهگیری -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<!-- نواره بالایی وضعیت پویا -->
+<div class="px-space-md py-2.5 bg-primary/10 flex items-center justify-between" id="status-banner">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]" id="status-icon">verified</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="status-text">نوبت رزرو شده و معتبر</span>
+</div>
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm" id="badge-pill">
+          مرحله ۱ از ۳
+        </span>
+</div>
+<div class="p-space-md space-y-space-md">
+<!-- کد رهگیری با امکان کپی مستقیم -->
+<div class="flex items-center justify-between bg-surface-container-low p-3 rounded-xl">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">شناسه یکتای نوبت (کد پیگیری)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-widest font-mono font-bold text-left dir-ltr mt-0.5">BLD-1403-8721</span>
+</div>
+<button class="h-9 px-3 bg-surface-container-lowest text-primary rounded-lg flex items-center gap-1.5 font-label-sm text-label-sm shadow-sm active:bg-primary-fixed" data-action="tracking-12" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copy-btn-text">کپی کد</span>
+</button>
+</div>
+<!-- ماتریس اطلاعات متقاضی و نوبت -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">متقاضی اهدا</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">سروش دلفان‌نیا</span>
+<span class="font-body-sm text-body-sm text-outline dir-ltr text-right">شماره: ۹۹۳۱۲۲۳۴</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">گروه خون اعلامی</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="bg-primary-fixed text-on-primary-fixed font-label-md text-label-md px-2 py-0.5 rounded font-bold dir-ltr">+O</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مثبت (نیاز فوری)</span>
+</div>
+</div>
+</div>
+<!-- اطلاعات زمان و مکان دقیق در دانشگاه لرستان -->
+<div class="space-y-2">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">calendar_clock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تاریخ و ساعت مراجعه</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳ • ساعت ۱۰:۰۰ الی ۱۰:۴۵</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">محل استقرار تیم انتقال خون</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">پردیس کمالوند، لابی سالن ورزشی امام علی (ع)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ایستگاه سیار شماره ۲ • دانشگاه لرستان</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- استپر پیشرفت سه‌مرحله‌ای (Accessible Progress Stepper) -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">مراحل فرآیند اهدای خون</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">به‌روزرسانی خودکار</span>
+</div>
+<div class="relative space-y-6">
+<!-- خط اتصال عمودی بین گام‌ها -->
+<div class="absolute right-[19px] top-4 bottom-4 w-0.5 bg-surface-container-high -z-0"></div>
+<!-- گام ۱: نوبت تأیید شد -->
+<div class="relative z-10 flex items-start gap-space-sm" id="step-1">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm" id="step-1-icon">
+<span class="material-symbols-outlined text-[20px] filled-icon">check_circle</span>
+</div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">۱. نوبت تأیید شد</h4>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">انجام شد</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">رزرو نوبت در سامانه با موفقیت ثبت و پیامک ارسال شد.</p>
+<span class="font-label-sm text-label-sm text-outline mt-1 inline-block">۲۱ اردیبهشت - ساعت ۱۴:۱۵</span>
+</div>
+</div>
+<!-- گام ۲: مراجعه ثبت شد -->
+<div class="relative z-10 flex items-start gap-space-sm" id="step-2">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline flex items-center justify-center shrink-0 shadow-sm" id="step-2-icon">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+</div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg font-semibold text-outline" id="step-2-title">۲. پذیرش و مراجعه حضوری</h4>
+<span class="font-label-sm text-label-sm text-outline" id="step-2-badge">در انتظار مراجعه</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="step-2-desc">احراز هویت و ارزیابی اولیه سلامت و فشار خون در ایستگاه کمالوند.</p>
+<span class="font-label-sm text-label-sm text-outline mt-1 inline-block" id="step-2-time">سه‌شنبه ۲۵ اردیبهشت - ساعت ۱۰:۰۰</span>
+</div>
+</div>
+<!-- گام ۳: اهدا ثبت شد -->
+<div class="relative z-10 flex items-start gap-space-sm" id="step-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline flex items-center justify-center shrink-0 shadow-sm" id="step-3-icon">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg font-semibold text-outline" id="step-3-title">۳. تکمیل خون‌گیری</h4>
+<span class="font-label-sm text-label-sm text-outline" id="step-3-badge">مرحله نهایی</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="step-3-desc">ثبت رسمی اهدای خون در سازمان انتقال خون و صدور گواهی داوطلبانه دانشگاهی.</p>
+<span class="font-label-sm text-label-sm text-outline mt-1 inline-block" id="step-3-time">پس از پذیرش و خون‌گیری</span>
+</div>
+</div>
+</div>
+</section>
+<!-- اقدامات بعدی هوشمند (Next Actions) بر اساس شرایط -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-3">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">tips_and_updates</span>
+        اقدامات و هشدارهای پیش از مراجعه
+      </h3>
+<div class="space-y-2">
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+<span class="font-body-sm text-body-sm">همراه داشتن اصل <strong>کارت ملی</strong> و <strong>کارت دانشجویی</strong> الزامی است.</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">restaurant</span>
+<span class="font-body-sm text-body-sm">صرف صبحانه یا میان‌وعده سالم و نوشیدن حداقل ۲ لیوان آب ۱ ساعت پیش از حضور.</span>
+</div>
+</div>
+<!-- دکمه‌های عملیاتی: مسیریابی و تغییر/لغو -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-10 px-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-container-high transition-colors" data-action="tracking-13" type="button">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span>مسیریابی در پردیس</span>
+</button>
+<button class="h-10 px-2 rounded-xl bg-surface-container-low text-error font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-error-container transition-colors" data-action="tracking-14" type="button">
+<span class="material-symbols-outlined text-[18px]">event_busy</span>
+<span>تغییر یا لغو نوبت</span>
+</button>
+</div>
+</section>
+<!-- ویجت تجسم تصویری پایگاه کمالوند -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center gap-3 overflow-hidden">
+<img class="w-20 h-20 rounded-lg object-cover shrink-0" data-alt="A warm, bright photo of Lorestan University Kamalvand campus sports hall lobby, set up respectfully as a student voluntary blood donation clinic, with clean academic banners, welcoming nurses, students smiling, gentle morning sunlight streaming through windows, calm and dignified burgundy-hued university setting." decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXDUd7QL8sCJd6oPqatmyiXmnRFEODrov60W7wJWfvaPWsWKk768x17Z2vL0jXss7MIJT90-umaIO65bVbJPCQJOmkWm5W_15j6MV-VcfkNlt9s5WpaemXwbDNdKiRDbp7d15meVGmHzb_2syjJZD0u7668maWMFl9i-M3EB8Jahf4MEoIAt_LfHr3RJ-H5g_ZkYglDxe6o8oWbggqTs4HJRrUAQZZPDLA_1dDiRaL">
+<div class="flex flex-col justify-center min-w-0 pr-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">پایگاه سیار دانشگاه لرستان</span>
+<span class="font-body-sm text-body-sm text-on-surface line-clamp-2 mt-0.5">تیم سازمان انتقال خون استان لرستان در سالن ورزشی امام علی (ع) مستقر خواهد بود.</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">پذیرش تا ساعت ۱۲:۳۰ ادامه دارد</span>
+</div>
+</section>
+</div>
+<!-- سناریو ۴: وضعیت نوبت لغو شده (Cancelled State View) -->
+<div class="hidden flex-col w-full space-y-4" id="view-cancelled">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg text-center shadow-md flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[36px]">event_busy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-error font-bold">این نوبت لغو شده است</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1 leading-relaxed">
+        نوبت با کد پیگیری <span class="dir-ltr inline-block font-mono font-bold text-on-surface">BLD-1403-8721</span> به درخواست کاربر یا تغییر در برنامه پایگاه لغو گردید.
+      </p>
+<div class="w-full bg-surface-container-low rounded-xl p-3 my-4 text-right">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-outline text-[18px]">info</span>
+<span class="font-body-sm text-body-sm">علت لغو: درخواست انصراف توسط دانشجو در سامانه</span>
+</div>
+</div>
+<div class="w-full space-y-2">
+<a class="w-full h-11 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-md" href="index.html?page=registration">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>رزرو مجدد نوبت جدید</span>
+</a>
+<button class="w-full h-10 bg-surface-container text-on-surface font-label-md text-label-md rounded-xl flex items-center justify-center" data-action="tracking-15" type="button">
+          بازگشت به اطلاعات نوبت فعال
+        </button>
+</div>
+</div>
+</div>
+<!-- سناریو ۵: وضعیت هیچ نوبتی یافت نشد (Not Found State View) -->
+<div class="hidden flex-col w-full space-y-4" id="view-not-found">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg text-center shadow-md flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-high text-outline flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[36px]">person_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">نوبتی با این مشخصات یافت نشد</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1 leading-relaxed">
+        شماره دانشجویی یا کد واردشده در پایگاه داده دانشگاه لرستان ثبت نشده است. لطفاً ارقام را مجدداً بررسی فرمایید.
+      </p>
+<!-- تصویر همراه برای پرهیز از حالت خام و خسته‌کننده -->
+<div class="w-full my-4 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-36 object-cover" data-alt="Calm artistic illustration of two university students holding hands in solidarity around a glowing red heart droplet, soft beige and burgundy colors, comforting and friendly tone for empty search results." decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm3vN8TTQ74JuuCekHkb6Mn17REbg77S7xJrmdMFLqxgXMaRenyMC8CAXIVCN1BCCGXtyBec_ClieRpLq-iY343z_DsTvC7QSy4t3mGS6-Cifli4eR1bxzWcVA8i-22mGrRKUjGGRsvs_p8iAhiDQpvCjgZzTuEhnhqqolgQoXMINrwtbHCKOm8BVE7UXpGwQ4PqYWdcoGZV_Ly6wGYJ7JOlO40CEcvBf_aQzMXXjH">
+</div>
+<div class="w-full space-y-2">
+<a class="w-full h-11 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-md" href="index.html?page=registration">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+<span>ثبت‌نام و دریافت نوبت اهدا</span>
+</a>
+<button class="w-full h-10 bg-surface-container text-on-surface font-label-md text-label-md rounded-xl flex items-center justify-center" data-action="tracking-16" type="button">
+          جستجوی مجدد با کد دیگر
+        </button>
+</div>
+</div>
+</div>
+<!-- سناریو ۶: وضعیت خطای موقت در اتصال به سرور (Temporary Server Error) -->
+<div class="hidden flex-col w-full space-y-4" id="view-error">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg text-center shadow-md flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-error-container text-error flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[36px]">cloud_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-error font-bold">خطای موقت در برقراری ارتباط</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1 leading-relaxed">
+        ارتباط با سرور مرکزی سامانه اهدای خون برقرار نشد. این موضوع معمولاً موقتی است و اطلاعات شما محفوظ می‌باشد.
+      </p>
+<div class="w-full bg-surface-container-low p-3 rounded-xl my-4 text-right font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>کد خطا: HTTP 503 Service Unavailable</span>
+<span class="font-mono text-outline">LU-NET-TIMEOUT</span>
+</div>
+<button class="w-full h-11 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-md active:opacity-90" id="retry-btn" data-action="tracking-17" type="button">
+<span class="material-symbols-outlined text-[18px]" id="retry-icon">autorenew</span>
+<span id="retry-label">تلاش مجدد برای استعلام</span>
+</button>
+</div>
+</div>
+<!-- یادآوری و پشتیبانی فوری پایگاه -->
+<section id="campaign-contact" class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container space-y-3"><div class="flex items-center justify-between flex-wrap gap-2"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[22px]">support_agent</span><div class="flex flex-col"><h3 class="font-label-lg text-label-lg text-on-surface font-bold">راه ارتباطی پویش و پشتیبانی پایگاه</h3><span class="font-body-sm text-body-sm text-on-surface-variant">کانال‌های رسمی ارتباط با تیم مستقر سازمان انتقال خون</span></div></div><a class="h-9 px-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-primary" href="#campaign-contact-details"><span class="material-symbols-outlined text-[16px]">contact_support</span><span>تماس با مسئول پویش</span></a></div><div id="campaign-contact-details" class="p-3 rounded-lg bg-surface-container-low text-on-surface space-y-1.5 border border-surface-container-high"><div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">info</span><span>اطلاعیه رسمی مرکز بهداشت دانشگاه لرستان:</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">جهت حفظ امنیت و جلوگیری از شماره‌های نامعتبر، کانال‌های تماس رسمی و تاییدشده مستقیماً توسط مرکز بهداشت و درمان دانشگاه لرستان (داخلی ۲۳۴۰) و سامانه پیامکی BloodNet اطلاع‌رسانی می‌گردد. در صورت نیاز حضوری، به میز پذیرش سالن ورزشی امام علی (ع) پردیس کمالوند مراجعه نمایید.</p></div></section>
+</div>
+</main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(24,28,31,0.05)]" data-active-classes="text-primary font-label-lg"><div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div><div class="flex items-center justify-around h-16 px-space-xs max-w-lg mx-auto md:hidden"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="صفحه-اصلی" href="index.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">صفحه اصلی</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="ثبت‌نام-اهدا" href="index.html?page=registration"><span class="material-symbols-outlined text-[24px]">volunteer_activism</span><span class="font-label-sm text-label-sm mt-0.5">ثبت‌نام اهدا</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-primary font-bold transition-colors" data-path="پیگیری-نوبت" href="index.html?page=tracking"><span class="material-symbols-outlined text-[24px] filled-icon">calendar_month</span><span class="font-label-sm text-label-sm mt-0.5">پیگیری نوبت</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="دعوت‌نامه" href="index.html?page=invitation"><span class="material-symbols-outlined text-[24px]">group_add</span><span class="font-label-sm text-label-sm mt-0.5">دعوت‌نامه</span></a></div></nav>
+</template>
+
+<template id="page-invitation">
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(107,1,25,0.04)] pt-safe border-b border-outline-variant/30">
+  <div class="h-16 px-gutter flex items-center justify-between max-w-7xl mx-auto w-full">
+    <!-- Right: Mobile Drawer Toggle & Logo Branding -->
+    <div class="flex items-center gap-space-sm">
+      <button type="button" id="drawer-toggle-btn" data-action="invitation-1" aria-label="باز کردن منوی ناوبری" class="lg:hidden w-9 h-9 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+      <a href="index.html" class="flex items-center gap-2.5 group focus:outline-none">
+        <img alt="BloodNet LU" class="h-9 w-auto object-contain shrink-0" src="images/logo.png">
+        <div class="flex flex-col text-right">
+          <span class="font-headline-sm text-[16px] lg:text-[18px] text-primary font-bold leading-tight group-hover:text-primary-container transition-colors">اهدای خون دانشجویی دانشگاه لرستان</span>
+          <span class="font-label-sm text-[11px] lg:text-[12px] text-on-surface-variant font-medium tracking-wide">BloodNet LU · سامانه ثبت‌نام و نوبت‌دهی</span>
+        </div>
+      </a>
+    </div>
+    <!-- Left: Profile & Appointment link -->
+    <div class="flex items-center gap-2">
+      <a href="index.html?page=tracking" aria-label="پیگیری نوبت من" class="w-9 h-9 rounded-full bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shadow-xs active:scale-95 transition-all text-decoration-none" title="پیگیری نوبت من">
+        <span class="material-symbols-outlined text-[20px]">person</span>
+      </a>
+    </div>
+  </div>
+  <div class="h-[2px] w-full bg-gradient-to-l from-transparent via-primary to-transparent opacity-60"></div>
+</header><!-- Mobile Drawer Overlay & Slide-in Panel -->
+<div id="mobile-drawer-overlay" data-action="invitation-2" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden" aria-hidden="true"></div>
+<div id="mobile-drawer" class="fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col justify-between p-space-md">
+  <div class="flex flex-col gap-space-md">
+    <div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 rounded-full bg-primary"></span>
+        <span class="font-headline-sm text-[16px] text-primary font-bold">منوی سامانه</span>
+      </div>
+      <button type="button" id="drawer-close-btn" data-action="invitation-3" aria-label="بستن منو" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1.5" aria-label="ناوبری همراه">
+      <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+        <span class="material-symbols-outlined text-[20px]">home</span>
+        <span>صفحه اصلی</span>
+      </a>
+      <a href="index.html?page=registration" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+        <span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+        <span>ثبت‌نام اهدا</span>
+      </a>
+      <a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-bold shadow-xs transition-all font-label-md text-label-md">
+        <span class="material-symbols-outlined text-[20px] text-primary">group_add</span>
+        <span>دعوت‌نامه</span>
+      </a>
+      <a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+        <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+        <span>پیگیری نوبت</span>
+      </a>
+    </nav>
+  </div>
+  <div class="pt-4 border-t border-outline-variant/30 flex flex-col gap-1 text-center">
+    <span class="text-[11px] text-on-surface-variant opacity-75">دانشگاه لرستان • کانون دانشجویی هلال احمر</span>
+    <span class="text-[10px] text-on-surface-variant opacity-60">سامانه یکپارچه اهدای خون</span>
+  </div>
+</div><main class="flex flex-col relative w-full pt-20 pb-24 lg:pb-12 bg-surface min-h-screen">
+  <div class="w-full max-w-7xl mx-auto px-margin flex items-start gap-space-lg">
+    <!-- Desktop Right-Hand Navigation Sidebar (Slim) -->
+    <aside class="hidden lg:flex flex-col w-64 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-space-md shrink-0 sticky top-24" aria-label="منوی اصلی">
+      <div class="flex items-center gap-2 pb-3 mb-3 border-b border-outline-variant/30">
+        <span class="w-2 h-5 rounded-full bg-primary"></span>
+        <span class="font-label-lg text-label-lg font-bold text-primary">بخش‌های سامانه</span>
+      </div>
+      <nav class="flex flex-col gap-1.5" aria-label="ناوبری دسکتاپ">
+        <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[20px]">home</span>
+          <span>صفحه اصلی</span>
+        </a>
+        <a href="index.html?page=registration" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+          <span>ثبت‌نام اهدا</span>
+        </a>
+        <a href="index.html?page=invitation" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-on-primary font-bold shadow-xs transition-all font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[20px]">group_add</span>
+          <span>دعوت‌نامه</span>
+        </a>
+        <a href="index.html?page=tracking" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-all font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+          <span>پیگیری نوبت</span>
+        </a>
+      </nav>
+      <div class="mt-6 p-3 bg-surface-container-low rounded-lg flex flex-col gap-1">
+        <span class="font-label-sm text-primary font-bold">پشتیبانی پویش</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant leading-relaxed">در صورت نیاز به راهنمایی با دفتر کانون تماس بگیرید.</span>
+      </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <div class="flex-1 min-w-0 max-w-2xl mx-auto flex flex-col pb-8 overflow-hidden select-none">
+      <!-- 1. Interactive Demo Banner -->
+      <div class="w-full bg-surface-container-high text-on-surface-variant px-space-md py-space-xs rounded-xl flex items-center justify-between shadow-xs mb-space-md border border-outline-variant/30">
+        <div class="flex items-center gap-space-xs min-w-0">
+          <span class="material-symbols-outlined text-[18px] text-tertiary shrink-0 filled-icon">info</span>
+          <span class="font-label-sm text-label-sm truncate">پیش‌نمایش تعاملی (حالت آزمایشی) • داده‌های واردشده نمونه هستند</span>
+        </div>
+        <span class="bg-surface-container-lowest text-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full shrink-0 shadow-xs font-bold">اطلاعات نمونه</span>
+      </div>
+
+      <!-- 2. Page Header & Friendly Subtitle -->
+      <div class="flex flex-col gap-1 mb-space-lg">
+        <div class="flex items-center gap-2">
+          <div class="w-2.5 h-6 rounded-full bg-primary"></div>
+          <h1 class="font-headline-lg text-[24px] lg:text-[30px] font-bold text-on-surface leading-tight">دعوت به اهدای خون در دانشگاه</h1>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant pr-4 leading-relaxed">پیام دعوت پایگاه انتقال خون دانشگاه لرستان به دانشجویان داوطلب و همدل</p>
+      </div>
+
+      <!-- Interactive State Selector Bar -->
+      <div class="bg-surface-container p-1 rounded-xl flex items-center justify-between mb-space-lg text-center gap-1 border border-outline-variant/20">
+        <button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm transition-all duration-200 bg-surface-container-lowest text-primary shadow-xs font-bold" id="tab-active" data-action="invitation-4" type="button">
+          کارت دعوت
+        </button>
+        <button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-200" id="tab-accepted" data-action="invitation-5" type="button">
+          پذیرفته‌شده
+        </button>
+        <button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-200" id="tab-declined" data-action="invitation-6" type="button">
+          انصراف
+        </button>
+        <button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-200" id="tab-expired" data-action="invitation-7" type="button">
+          منقضی‌شده
+        </button>
+      </div>
+
+      <!-- VIEW 1: Active Invitation State -->
+      <div class="flex flex-col gap-space-lg transition-all duration-300" id="view-active">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-space-lg relative overflow-hidden flex flex-col gap-space-md">
+          <!-- Zagros & Lorestan Heritage Subtle Wave Accent -->
+          <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary via-primary-container to-primary"></div>
+          
+          <!-- Card Top Badge Row -->
+          <div class="flex items-center justify-between mt-1">
+            <span class="inline-flex items-center gap-1.5 bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-xs">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              دعوت رسمی دانشجویی
+            </span>
+            <span class="bg-surface-container text-on-surface-variant font-label-sm text-[11px] px-2.5 py-0.5 rounded-full">
+              اطلاعات نمونه
+            </span>
+          </div>
+
+          <!-- Campus Photo Banner Placeholders (16:9 Responsive Ratio) -->
+          <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-inner bg-surface-container-high">
+            <img class="w-full h-full object-cover" data-alt="University students warmly gathered at Lorestan University campus courtyard near blood donation drive mobile station, bright natural daylight, crisp university atmosphere, warm documentary photography style" decoding="async" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyR2RaZ6qZpb8_Brhms4xa0FKXcNIdkx2eXIfik4guk1f-Vj8goZveYylLvOrUgZRVKRI-GkDIxpvU__Hyf5wVhvg9jHgLpzyEzVX9kPuSG1XPwKK5xJ8V-dvT5UYmQKAXAbvO_0fGSc8Pwm3Y_vJi7d4xR17CS5WBFYHe2zXPE4NPJT3yWftlZFBUr_aRvOnHmBW9jQHBh2US1eV5j5Di4tJhF_o0PTk7HX6vfLNu">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-space-md">
+              <div class="flex items-center gap-2 text-white">
+                <span class="material-symbols-outlined text-secondary-fixed text-[22px]">health_and_safety</span>
+                <span class="font-label-lg text-label-lg font-bold drop-shadow-sm">دانشگاه لرستان • پردیس کمالوند</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Title & Academic Organizers -->
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="text-primary text-[22px] font-bold">🩸</span>
+              <h2 class="font-headline-md text-[18px] lg:text-[22px] font-bold text-on-surface">پویش بهاره اهدای خون پردیس کمالوند</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">ویژه دانشجویان، اساتید و پژوهشگران دانشگاه لرستان</p>
+          </div>
+
+          <!-- Event Logistics Details List -->
+          <div class="flex flex-col gap-2.5 bg-surface-container-low p-space-md rounded-xl border border-outline-variant/20">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs shrink-0">
+                <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">زمان برگزاری</span>
+                <span class="font-label-lg text-label-lg text-on-surface font-semibold">سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs shrink-0">
+                <span class="material-symbols-outlined text-[18px]">schedule</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">ساعات پذیرش</span>
+                <span class="font-label-lg text-label-lg text-on-surface font-semibold">۰۸:۳۰ الی ۱۴:۰۰ (پیوسته)</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs shrink-0">
+                <span class="material-symbols-outlined text-[18px]">pin_drop</span>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">محل استقرار تیم سیار</span>
+                <span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">پردیس کمالوند، لابی سالن ورزشی امام علی (ع)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warm Impact Card / Human Connection -->
+          <div class="bg-primary-fixed/30 border border-primary-fixed p-space-md rounded-xl flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-xs">
+              <span class="material-symbols-outlined text-[20px] filled-icon">favorite</span>
+            </div>
+            <div class="flex flex-col gap-0.5">
+              <span class="font-label-md text-label-md text-on-primary-fixed-variant font-bold">نبض زندگی در دستان شماست</span>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                با اهدای تنها یک واحد خون در این پویش دانشجویی، جان ۳ بیمار نیازمند به فرآورده‌های خونی در مراکز درمانی استان لرستان را نجات دهید.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Call-To-Action Triggers -->
+          <div class="flex flex-col gap-2.5 pt-2">
+            <a href="index.html?page=registration" class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98] text-decoration-none" data-action="invitation-8">
+              <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+              <span>شرکت می‌کنم (انتخاب نوبت)</span>
+              <span class="material-symbols-outlined text-[18px] mr-auto">arrow_back</span>
+            </a>
+            <button class="w-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant py-3 px-space-md rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all active:scale-[0.98] border border-outline-variant/30" data-action="invitation-9" type="button">
+              <span class="material-symbols-outlined text-[18px]">event_busy</span>
+              <span>فعلاً نمی‌توانم</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Student Eligibility Micro-Guide (Warm Academic Layout) -->
+        <div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-3 border border-outline-variant/20">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+            <span class="font-label-lg text-label-lg text-on-surface font-semibold">یادآوری شرایط اولیه اهدای خون</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-right">
+            <div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2 border border-outline-variant/20">
+              <span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+              <span class="font-body-sm text-body-sm text-on-surface">همراه داشتن کارت ملی</span>
+            </div>
+            <div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2 border border-outline-variant/20">
+              <span class="material-symbols-outlined text-primary text-[18px]">scale</span>
+              <span class="font-body-sm text-body-sm text-on-surface">حداقل وزن ۵۰ کیلوگرم</span>
+            </div>
+            <div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2 border border-outline-variant/20">
+              <span class="material-symbols-outlined text-primary text-[18px]">bedtime</span>
+              <span class="font-body-sm text-body-sm text-on-surface">استراحت کافی شب قبل</span>
+            </div>
+            <div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center gap-2 border border-outline-variant/20">
+              <span class="material-symbols-outlined text-primary text-[18px]">water_drop</span>
+              <span class="font-body-sm text-body-sm text-on-surface">نوشیدن آب و مایعات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Accepted Feedback State -->
+      <div class="hidden flex-col gap-space-lg transition-all duration-300" id="view-accepted">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-space-lg flex flex-col items-center text-center gap-space-md relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1.5 bg-secondary"></div>
+          <div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-xs mt-2">
+            <span class="material-symbols-outlined text-[36px] filled-icon">task_alt</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-label-sm text-label-sm text-secondary font-bold">پاسخ دعوت‌نامه ثبت شد</span>
+            <h3 class="font-headline-md text-[20px] font-bold text-on-surface">سپاس از اعلام آمادگی و ایثار شما!</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1 leading-relaxed">
+              حضور پرمهر شما در «پویش بهاره اهدای خون دانشگاه لرستان» مایه‌ی امید و زندگی است. اکنون می‌توانید بازه زمانی مورد نظرتان را رزرو فرمایید.
+            </p>
+          </div>
+          <!-- Appointment Reservation Next Step Card -->
+          <div class="w-full bg-surface-container-low p-space-md rounded-xl text-right flex flex-col gap-2 border border-outline-variant/20">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md text-on-surface font-bold">مرحله بعدی: رزرو بازه نوبت‌دهی</span>
+              <span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold">ظرفیت فعال</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              برای پیشگیری از شلوغی و معطلی، لطفاً بازه زمانی دقیق پذیرش را در سامانه مشخص کنید (مدت زمان فرآیند اهدا تقریباً ۲۰ دقیقه است).
+            </p>
+          </div>
+          <div class="flex flex-col w-full gap-2.5 pt-2">
+            <a class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]" href="index.html?page=registration">
+              <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+              <span>انتخاب زمان و ثبت‌نام نوبت</span>
+              <span class="material-symbols-outlined text-[18px] mr-auto">arrow_back</span>
+            </a>
+            <button class="w-full bg-surface-container text-on-surface-variant py-2.5 px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" data-action="invitation-10" type="button">
+              <span class="material-symbols-outlined text-[18px]">replay</span>
+              <span>مشاهده مجدد متن دعوت</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW 3: Declined Feedback State -->
+      <div class="hidden flex-col gap-space-lg transition-all duration-300" id="view-declined">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-space-lg flex flex-col items-center text-center gap-space-md relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1.5 bg-outline"></div>
+          <div class="w-16 h-16 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shadow-xs mt-2">
+            <span class="material-symbols-outlined text-[34px]">sentiment_satisfied</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-bold">وضعیت: انصراف محترمانه از این نوبت</span>
+            <h3 class="font-headline-md text-[20px] font-bold text-on-surface">با سپاس صمیمانه از توجه شما</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1 leading-relaxed">
+              کاملاً شرایط شما را درک می‌کنیم. در پویش‌ها و رویدادهای آینده دانشگاه لرستان صمیمانه منتظر حضور گرمتان خواهیم بود.
+            </p>
+          </div>
+          <!-- Campus Community Good Will Note -->
+          <div class="w-full bg-surface-container-low p-space-md rounded-xl text-right flex items-center gap-3 border border-outline-variant/20">
+            <span class="material-symbols-outlined text-primary text-[28px] shrink-0">campaign</span>
+            <div class="flex flex-col">
+              <span class="font-label-md text-label-md text-on-surface font-bold">همراهی از طریق بازنشر</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant">می‌توانید با اشتراک‌گذاری این دعوت میان همکلاسی‌های خود، سفیر زندگی باشید.</span>
+            </div>
+          </div>
+          <div class="flex flex-col w-full gap-2.5 pt-2">
+            <a class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-[0.98]" href="index.html">
+              <span class="material-symbols-outlined text-[20px]">home</span>
+              <span>بازگشت به صفحه اصلی</span>
+            </a>
+            <button class="w-full bg-surface-container text-on-surface-variant py-2.5 px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" data-action="invitation-11" type="button">
+              <span class="material-symbols-outlined text-[18px]">undo</span>
+              <span>تغییر نظر و مشاهده دعوت‌نامه</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW 4: Expired State Card -->
+      <div class="hidden flex-col gap-space-lg transition-all duration-300" id="view-expired">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 p-space-lg flex flex-col gap-space-md relative overflow-hidden opacity-95">
+          <div class="absolute top-0 inset-x-0 h-1.5 bg-outline-variant"></div>
+          <div class="flex items-center justify-between mt-1">
+            <span class="inline-flex items-center gap-1.5 bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm font-bold">
+              <span class="material-symbols-outlined text-[16px]">history_toggle_off</span>
+              مهلت این دعوت به پایان رسیده است
+            </span>
+            <span class="bg-surface-container text-on-surface-variant font-label-sm text-[11px] px-2 py-0.5 rounded-full">
+              رویداد گذشته
+            </span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="font-headline-md text-[20px] font-bold text-on-surface/80 line-through decoration-outline-variant">
+              پویش بهاره اهدای خون پردیس کمالوند
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              این پویش در تاریخ سه‌شنبه ۲۵ اردیبهشت ۱۴۰۳ با مشارکت گسترده دانشجویان با موفقیت به پایان رسید.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 bg-surface-container-low p-space-md rounded-xl text-center border border-outline-variant/20">
+            <div class="flex flex-col items-center justify-center p-2">
+              <span class="font-headline-md text-[24px] text-primary font-bold">۱۴۲</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">داوطلب ثبت‌نامی</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2">
+              <span class="font-headline-md text-[24px] text-secondary font-bold">۱۰۸</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">واحد خون اهداشده</span>
+            </div>
+          </div>
+          <div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-3 border border-outline-variant/20">
+            <span class="material-symbols-outlined text-tertiary text-[24px] shrink-0">upcoming</span>
+            <div class="flex flex-col gap-0.5">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">پویش بعدی به‌زودی اطلاع‌رسانی می‌شود</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                پایگاه بعدی در دانشکده کشاورزی و منابع طبیعی برگزار خواهد شد. برای رزرو نوبت در رویدادهای آینده آماده باشید.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col w-full gap-2.5 pt-2">
+            <a class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-[0.98]" href="index.html">
+              <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+              <span>مشاهده تقویم رویدادهای پیش‌رو</span>
+            </a>
+            <button class="w-full bg-surface-container text-on-surface-variant py-2.5 px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" data-action="invitation-12" type="button">
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              <span>بازگشت به پیش‌نمایش اصلی</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conceptual Distinction Cards (دعوت، نوبت‌دهی، ثبت نهایی اهدا) -->
+      <div class="mt-space-lg flex flex-col gap-2">
+        <span class="font-label-md text-label-md text-on-surface-variant font-bold pr-1">مراحل سه‌گانه اهدا در دانشگاه لرستان:</span>
+        <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="bg-surface-container-lowest p-2.5 rounded-xl shadow-xs flex flex-col items-center gap-1 border-t-2 border-primary border-x border-b border-outline-variant/30">
+            <span class="w-6 h-6 rounded-full bg-primary text-on-primary text-[12px] font-bold flex items-center justify-center">۱</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">دعوت‌نامه</span>
+            <span class="font-body-sm text-[10px] text-on-surface-variant">اطلاع از پویش</span>
+          </div>
+          <div class="bg-surface-container-lowest p-2.5 rounded-xl shadow-xs flex flex-col items-center gap-1 border-t-2 border-outline-variant border-x border-b border-outline-variant/30">
+            <span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant text-[12px] font-bold flex items-center justify-center">۲</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">نوبت‌دهی</span>
+            <span class="font-body-sm text-[10px] text-on-surface-variant">رزرو زمان دقیق</span>
+          </div>
+          <div class="bg-surface-container-lowest p-2.5 rounded-xl shadow-xs flex flex-col items-center gap-1 border-t-2 border-outline-variant border-x border-b border-outline-variant/30">
+            <span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant text-[12px] font-bold flex items-center justify-center">۳</span>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">ثبت نهایی</span>
+            <span class="font-body-sm text-[10px] text-on-surface-variant">حضور در پایگاه</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main><nav class="fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(24,28,31,0.05)] border-t border-outline-variant/30 lg:hidden" data-active-classes="text-primary font-label-lg" aria-label="ناوبری پایین">
+  <div class="flex items-center justify-around h-16 px-space-xs max-w-lg mx-auto">
+    <a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html">
+      <span class="material-symbols-outlined text-[24px]">home</span>
+      <span class="font-label-sm text-[11px] mt-0.5">صفحه اصلی</span>
+    </a>
+    <a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html?page=registration">
+      <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+      <span class="font-label-sm text-[11px] mt-0.5">ثبت‌نام اهدا</span>
+    </a>
+    <a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-primary font-bold transition-colors" href="index.html?page=invitation">
+      <span class="material-symbols-outlined text-[24px]">group_add</span>
+      <span class="font-label-sm text-[11px] mt-0.5">دعوت‌نامه</span>
+    </a>
+    <a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" href="index.html?page=tracking">
+      <span class="material-symbols-outlined text-[24px]">calendar_month</span>
+      <span class="font-label-sm text-[11px] mt-0.5">پیگیری نوبت</span>
+    </a>
+  </div>
+</nav>
+</template>
+</body>
+</html>

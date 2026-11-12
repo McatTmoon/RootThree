@@ -1,0 +1,18 @@
+{% load static %}<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% block title %}اهدای خون در دانشگاه لرستان{% endblock %}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'bloodnet/css/styles.css' %}">
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="{% static 'bloodnet/js/script.js' %}" defer></script>
+</head>
+<body data-page="{% block page_id %}home{% endblock %}" {% block body_attrs %}{% endblock %} class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+{% block content %}{% endblock %}
+</body>
+</html>
